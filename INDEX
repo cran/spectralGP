@@ -1,0 +1,40 @@
+add.blocks.gp           Adds coefficient block structure to a spectral
+                        GP object
+change.param.gp         Changes correlation function parameter values
+                        of a spectral GP object
+copy.gp                 Copy a spectral GP object.
+expand.gpgrid.gp        Calculate grid locations for a spectral GP
+                        object.
+getgrid.gp              Calculates the gridpoints in a spectral GP
+                        object
+Gibbs.sample.coeff.gp   Samples new coeffients via Gibbs sampling in a
+                        spectral GP object.
+gp                      Create a new GP object
+image.plot              Draws image plot with a legend strip for the
+                        color scale.
+is.gp                   Test if object is a spectral GP
+lines.gp                Add a line plot for a one-dimensional process
+                        based on a spectral GP object
+logdensity.gp           Calculates log prior density of a spectral GP
+                        object
+lonlat2xy               Projects lon/lat coordinates to x/y Euclidean
+                        coordinate system
+matern.specdens         Matern correlation spectral density function
+names.gp                The names of the elements of a GP object
+new.mapping             Map arbitrary locations to gridpoints of
+                        spectral GP object
+plot.gp                 Plot a process based on a spectral GP object
+points.gp               Add points for a one-dimensional process based
+                        on a spectral GP object
+predict.gp              Prediction from a spectral GP object
+print.gp                Spectral GP default print statement
+propose.coeff.gp        Proposes new coeffients in a spectral GP
+                        object.
+rdist.earth             Great circle distance matrix
+simulate.gp             Simulates a process realization from a
+                        spectral GP object
+spectralGP              spectralGP - tools for specifying Gaussian
+                        processes using the computationally efficient
+                        Fourier basis
+xy2unit                 Scales locations to the unit hypercube for use
+                        in spectral GP
