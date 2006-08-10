@@ -1,4 +1,4 @@
-export(add.blocks.gp,add.blocks,calc.variances.gp,calc.variances,change.param.gp,change.param,copy.gp,copy,expand.gpgrid.gp,expand.gpgrid,getgrid.gp,getgrid,Gibbs.sample.coeff.gp,Gibbs.sample.coeff,gp,image.plot.info,image.plot.plt,image.plot,is.gp,lines.gp,logdensity.gp,logdensity,lonlat2xy,matern.specdens,names.gp,new.mapping,plot.gp,points.gp,predict.gp,print.gp,propose.coeff.gp,propose.coeff,rdist.earth,simulate.gp,simulate,updateprocess.gp,updateprocess,xy2unit,zero.coeff.gp,zero.coeff)
+export(add.blocks.gp,add.blocks,calc.variances.gp,calc.variances,change.param.gp,change.param,copy.gp,copy,expand.gpgrid.gp,expand.gpgrid,getgrid.gp,getgrid,Gibbs.sample.coeff.gp,Gibbs.sample.coeff,gp,Hastings.coeff.gp,Hastings.coeff,image.plot.info,image.plot.plt,image.plot,is.gp,lines.gp,logdensity.gp,logdensity,lonlat2xy,matern.specdens,names.gp,new.mapping,plot.gp,points.gp,predict.gp,print.gp,propose.coeff.gp,propose.coeff,rdist.earth,simulate.gp,simulate,updateprocess.gp,updateprocess,xy2unit,zero.coeff.gp,zero.coeff)
 
 importFrom(graphics,plot,lines,points)
 importFrom(stats,predict)
@@ -21,3 +21,4 @@ S3method(calc.variances,gp)
 S3method(logdensity,gp)
 S3method(getgrid,gp)
 S3method(Gibbs.sample.coeff,gp)
+S3method(Hastings.coeff,gp)

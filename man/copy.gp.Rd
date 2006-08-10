@@ -20,15 +20,12 @@ copy.gp(object, object2 = NULL,\dots)
 }
 \details{
   This function copies an object of class gp.  More details on the
-  spectral representation of GPs can be found in Paciorek & Ryan
-  (2005). 
+  spectral representation of GPs can be found in Paciorek (2006). 
 }
 \value{
   An object of class gp.  If \code{object2} is specified, returns NULL.
 }
-\references{For technical details, see Paciorek & Ryan (2005).
-  Accounting for space in nonparametric logistic regression: A Bayesian
-  spectral basis model outperforms other methods.}
+\references{For technical details, see Paciorek, C.J. 2006. Bayesian Smoothing of Irregularly-spaced Data Using Fourier Basis Functions. Harvard University Biostatistics Working Paper Series. Working Paper 49.  \url{http://www.bepress.com/harvardbiostat/paper49}}
   \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }
 \seealso{ \code{\link{gp}},\code{\link{is.gp}}}
 \examples{

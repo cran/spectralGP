@@ -1,5 +1,5 @@
 "gp" <-
-function(gridsize=c(64,64),specdens="matern.specdens",specdens.param=c(1,4)){
+function(gridsize=c(64,64),specdens="matern.specdens",specdens.param=c(1,4),variance.param=1,const.fixed=FALSE){
   # creates a gp object, based on the chosen grid, the spectral density of the desired correlation function and parameters for the correlation function
   if(min(gridsize)<2 || sum(log(gridsize,2)%%1)){
     stop("Must have a grid of power of 2 in each dimension")
@@ -10,6 +10,8 @@ function(gridsize=c(64,64),specdens="matern.specdens",specdens.param=c(1,4)){
   object$gridsize=gridsize
   object$d=length(gridsize)
   object$specdens.param=specdens.param
+  object$variance.param=variance.param
+  object$const.fixed=const.fixed     # if fixed, coefficient for constant basis function set to zero
   if(is.character(specdens)){
     object$specdens=get(specdens,envir=parent.frame())
     object$specdens.name=specdens
@@ -47,6 +49,6 @@ function(gridsize=c(64,64),specdens="matern.specdens",specdens.param=c(1,4)){
   zero.coeff(object)
   updateprocess(object)
   object$num.blocks=0
-  cat("Note that the spatial range parameter is interpreted based\non the process living on a (0,pi)^d grid\n")
+  cat("Note that the spatial range parameter is interpreted based\non the process living on a (0,1)^d grid\n")
   object
 }

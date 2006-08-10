@@ -1,6 +1,6 @@
 Package: spectralGP
-Version: 0.9
-Date: 2005-09-24
+Version: 1.0
+Date: 2006-08-10
 Author: Chris Paciorek <paciorek@alumni.cmu.edu>
 Maintainer: Chris Paciorek <paciorek@alumni.cmu.edu>
 Title: Approximate Gaussian processes using the Fourier basis
@@ -15,4 +15,4 @@ Requires: R (>= 1.9.0)
 Imports: graphics,stats
 LazyLoad: yes
 License: GPL (version 2 or later)
-Packaged: Sat Sep 24 15:10:43 2005; paciorek
+Packaged: Thu Aug 10 17:52:38 2006; paciorek

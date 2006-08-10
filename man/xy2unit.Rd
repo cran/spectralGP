@@ -31,9 +31,7 @@ xy2unit(locations, locations.scale = NULL)
   A matrix (vector for one-dimensional data) of scaled locations lying
   in \eqn{(0,1)^d}.
 }
-\references{For technical details, see Paciorek & Ryan (2005).
-  Accounting for space in nonparametric logistic regression: A Bayesian
-  spectral basis model outperforms other methods.}
+\references{For technical details, see Paciorek, C.J. 2006. Bayesian Smoothing of Irregularly-spaced Data Using Fourier Basis Functions. Harvard University Biostatistics Working Paper Series. Working Paper 47.  \url{http://www.bepress.com/harvardbiostat/paper47}}
   \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }
 \seealso{\code{\link{gp}},\code{\link{new.mapping}}}
 \examples{

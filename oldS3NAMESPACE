@@ -13,4 +13,5 @@ S3method(change.param,gp)
 S3method(calc.variances,gp)
 S3method(logdensity,gp)
 S3method(getgrid,gp)
-
+S3method(Gibbs.sample.coeff,gp)
+S3method(Hastings.coeff,gp)

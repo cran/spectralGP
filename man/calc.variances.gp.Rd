@@ -20,16 +20,18 @@ calc.variances.gp(object,\dots)
   This function is  an internal function not meant to be called by the user. 
   The prior variances for each coefficient are calculated based on the
   frequency of the corresponding basis function, the spectral density
-  function, and the parameters of the spectral density/correlation
-  function. The function creates \code{variances}, a matrix of
+  function, the parameters of the spectral density/correlation
+  function, and the (optional) coefficient variance parameter.
+  The function creates \code{variances}, a matrix of
   variances corresponding to \code{coeff},  the matrix of coefficients.
 }
 \value{
    The function modifies the GP object, which is essentially a pointer
    (an R environment in this case), so NULL is returned.}
-\references{For technical details, see Paciorek & Ryan (2005).
-  Accounting for space in nonparametric logistic regression: A Bayesian
-  spectral basis model outperforms other methods.}
+\references{For technical details, see Paciorek, C.J. (2006). Bayesian
+  Smoothing of Irregularly-spaced Data Using Fourier Basis
+  Functions. Harvard University Biostatistics Working Paper Series. Working Paper 49.
+\url{http://www.bepress.com/harvardbiostat/paper49}}
   \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }
 \seealso{\code{\link{gp}},\code{\link{propose.coeff.gp}},\code{\link{simulate.gp}},\code{\link{logdensity.gp}},\code{\link{change.param.gp}}}
 \examples{

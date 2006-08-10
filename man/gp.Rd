@@ -12,7 +12,7 @@
   GPs are supported.
 }
 \usage{
-gp(gridsize = c(64, 64), specdens = matern.specdens, specdens.param = c(1, 4))
+gp(gridsize = c(64, 64), specdens = matern.specdens, specdens.param = c(1, 4),variance.param=1,const.fixed=FALSE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -25,12 +25,22 @@ gp(gridsize = c(64, 64), specdens = matern.specdens, specdens.param = c(1, 4))
     of parameter values.  See matern.specdens() for an example.}
   \item{specdens.param}{ Vector of parameters to be supplied to the
     specdens.function function.}
+  \item{variance.param}{ Variance parameter used to scale the variances
+    of all the coefficients. Note that this can also be done outside of
+    the GP framework by scaling the predictions as in Wikle (2002).}
+  \item{const.fixed}{Logical indicating whether the coefficient of the
+    constant basis function is fixed at zero. Since this coefficient
+    does not have sufficient flexibility under the prior in most
+    situations, it is advisable to fix this coefficient and have a
+    separate mean value/parameter outside of the gp object. However, in
+    simulating realizations, one should not fix this parameter, so as to
+  ensure the correct approximate covariance structure induced by the
+  spectral density and parameter values chosen.}
 }
 \details{
   This function produces an object of class gp.  More details on the
-  spectral representation of GPs can be found in Paciorek & Ryan
-  (2005).  Accounting for space in nonparametric logistic regression: A
-  Bayesian spectral basis model outperforms other methods.
+  spectral representation of GPs can be found in Paciorek (2006); see
+  below.
 }
 \value{
   An object of class gp.  This includes the dimension of the space, the
@@ -47,10 +57,8 @@ gp(gridsize = c(64, 64), specdens = matern.specdens, specdens.param = c(1, 4))
     basis functions in expand.grid() format.}
   \item{variances}{A matrix of coefficient variances.}
 }
-\references{For technical details, see Paciorek & Ryan (2005).
-  Accounting for space in nonparametric logistic regression: A Bayesian
-  spectral basis model outperforms other methods.}
-  \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }
+ \references{For technical details, see Paciorek, C.J. 2006. Bayesian Smoothing of Irregularly-spaced Data Using Fourier Basis Functions. Harvard University Biostatistics Working Paper Series. Working Paper 47.  \url{http://www.bepress.com/harvardbiostat/paper47}}
+ \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }
 \seealso{ \code{\link{simulate.gp}},\code{\link{plot.gp}},\code{\link{propose.coeff.gp}},\code{\link{calc.variances.gp}},\code{\link{new.mapping}},\code{\link{logdensity.gp}},\code{\link{predict.gp}},\code{\link{add.blocks.gp}}}
 \examples{
 library(spectralGP)

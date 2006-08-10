@@ -1,15 +1,14 @@
-\name{Gibbs.sample.coeff.gp}
-\alias{Gibbs.sample.coeff.gp}
+\name{Hastings.coeff.gp}
+\alias{Hastings.coeff.gp}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{ Samples new coeffients via Gibbs sampling in a spectral GP object.}
+\title{Calculates Hastings value of coefficients}
 \description{
-  Samples new coefficients via Gibbs sampling in a spectral GP object
-  following the Gibbs sampling scheme of Wikle (2002), which involves an
-  extra variance component (\code{sig2e} and a noisy version of the
-  process (\code{z}).
+  Calculates Hastings value of coefficients, the logdensity of the current
+  coefficients given proposal mean and variance based on a Gibbs sample
+  of the form in \code{Gibbs.sample.coeff.gp}.}
 }
 \usage{
-Gibbs.sample.coeff.gp(object, z, sig2e, meanVal=0, sdVal=1,returnHastings=FALSE, \dots)
+Hastings.coeff.gp(object, z, sig2e, meanVal=0, sdVal=1, \dots)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -19,19 +18,15 @@ Gibbs.sample.coeff.gp(object, z, sig2e, meanVal=0, sdVal=1,returnHastings=FALSE,
     version of the process.}
   \item{meanVal}{Optional mean value for \code{z}.}
   \item{sdVal}{Optional standard deviation value for \code{z}.}
-  \item{returnHastings}{Optional argument telling whether to return the
-    logdensity of the proposal for use in a Metropolis-Hastings correction
-    calculation.}
   \item{\dots}{Other arguments.}
 }
 \details{
-  This function can be used in an MCMC context to take Gibbs samples
-  of the process coefficients, as part of the algorithm of Wikle
-  (2002). The function modifies the GP object, updating the \code{coeff} and
-  \code{process} components.}
+  This function can be used in an MCMC context to calculate the Hastings correction
+  that may be necessary in taking a quasi-Gibbs sample of the process
+  coefficients, as part of one of the algorithms of Paciorek (2006).
+  The function calculates and returns the logdensity.}
 \value{
-    The function modifies the GP object, which is essentially a pointer
-   (an R environment in this case), so NULL is returned, unless \code{returnHastings=TRUE}.}
+    The function returns the logdensity.}
 \references{For technical details, see Paciorek, C.J. 2006. Bayesian Smoothing of Irregularly-spaced Data Using Fourier Basis Functions. Harvard University Biostatistics Working Paper Series. Working Paper 49.  \url{http://www.bepress.com/harvardbiostat/paper49}}
   \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }
 \seealso{\code{\link{gp}},\code{\link{propose.coeff.gp}},\code{\link{updateprocess.gp}}}

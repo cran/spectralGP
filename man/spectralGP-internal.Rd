@@ -6,6 +6,7 @@
 \alias{expand.gpgrid}
 \alias{getgrid}
 \alias{Gibbs.sample.coeff}
+\alias{Hastings.coeff}
 \alias{image.plot.info}
 \alias{image.plot.plt}
 \alias{logdensity}

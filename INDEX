@@ -10,6 +10,7 @@ getgrid.gp              Calculates the gridpoints in a spectral GP
 Gibbs.sample.coeff.gp   Samples new coeffients via Gibbs sampling in a
                         spectral GP object.
 gp                      Create a new GP object
+Hastings.coeff.gp       Calculates Hastings value of coefficients
 image.plot              Draws image plot with a legend strip for the
                         color scale.
 is.gp                   Test if object is a spectral GP
@@ -31,8 +32,8 @@ print.gp                Spectral GP default print statement
 propose.coeff.gp        Proposes new coeffients in a spectral GP
                         object.
 rdist.earth             Great circle distance matrix
-simulate.gp             Simulates a process realization from a
-                        spectral GP object
+simulate.gp             Simulates a process realization from a spectral
+                        GP object
 spectralGP              spectralGP - tools for specifying Gaussian
                         processes using the computationally efficient
                         Fourier basis

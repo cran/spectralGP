@@ -1,0 +1,40 @@
+"Hastings.coeff.gp" <-
+function(object,z,sig2e,meanVal=0,sdVal=1,...){
+  if(!is.gp(object)){
+    stop(" 'object' argument must be of class 'gp' ")
+  }
+  
+  m1=object$gridsize[1]
+  m2=object$gridsize[2]
+  
+  sig2e.precMatrix=matrix(2*sdVal*sdVal/sig2e,nr=m1,nc=m2)
+  sig2e.precMatrix[1,1]=0.5*sig2e.precMatrix[1,1]
+  sig2e.precMatrix[(m1/2+1),1]=0.5*sig2e.precMatrix[(m1/2+1),1]
+  if(object$d==2){
+    sig2e.precMatrix[(m1/2+1),(m2/2+1)]=0.5*sig2e.precMatrix[(m1/2+1),(m2/2+1)]
+    sig2e.precMatrix[1,(m2/2+1)]=0.5*sig2e.precMatrix[1,(m2/2+1)]
+  }
+  coeff.var=1/(1/(object$variance.param*object$variances)+sig2e.precMatrix)
+  coeff.mean=coeff.var*sig2e.precMatrix*fft(matrix((z-meanVal)/sdVal,nr=m1,nc=m2,byrow=FALSE), inv = FALSE)/(sqrt(m1*m2))  # division by sqrt(m1*m2) ensures proper scaling
+
+  screenr=matrix(1,nr=m1,nc=m2)
+  screenr[m1:(m1/2+2),1]=0
+  if(object$d==2){
+    screenr[(m1/2+2):m1,(m2/2+1):m2]=0
+    screenr[1:(m1/2+1),(m2/2+2):m2]=0
+  }
+  if(object$const.fixed){
+    screenr[1,1]=0
+  }
+  screeni=screenr
+  screeni[1,1]=0
+  screeni[(m1/2+1),1]=0
+  if(object$d==2){
+    screeni[1,(m2/2+1)]=0
+    screeni[(m1/2+1),(m2/2+1)]=0
+  }
+  tmpr=c(dnorm(Re(object$coeff),Re(coeff.mean),sqrt(coeff.var),log=T))
+  tmpi=c(dnorm(Im(object$coeff),Im(coeff.mean),sqrt(coeff.var),log=T))
+  return(sum(tmpr[c(screenr==1)])+sum(tmpi[c(screeni==1)]))
+}
+

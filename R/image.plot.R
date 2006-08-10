@@ -1,9 +1,9 @@
-    "image.plot" <-
-function (..., add = FALSE, nlevel = 64, legend.shrink = 0.9, 
+"image.plot" <- function (..., add = FALSE, nlevel = 64, legend.shrink = 0.9, 
     legend.width = 0.05, graphics.reset = FALSE, horizontal = FALSE, 
     offset = 2 * legend.width, bigplot = NULL, smallplot = NULL, 
-    legend.only = FALSE, col = topo.colors(nlevel)) 
-{
+    legend.only = FALSE, col = topo.colors(nlevel)) {
+
+  # this is modified slightly from the fields function image.plot() and uses the fields auxiliary functions image.plot.info() and image.plot.plt()
     old.par <- par(no.readonly = TRUE)
     info <- image.plot.info(...)
     if (add) 

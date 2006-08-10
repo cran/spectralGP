@@ -21,39 +21,37 @@ Some major methods include:
 \item \code{predict.gp} Extract process values at specified domain points
 }
 
-Note that if implementing the Gibbs sampling algorithm of Wikle (2002),
-when you use the FFT to calculate t(Psi)z (using Wikle's notation),
-you should use the following approach in R:
-\code{fft(matrix(z,fun$gridsize[1],fun$gridsize[2]),inv=FALSE)/sqrt(prod(fun$gridsize))},
-where z is a vector of (noisy) process values corresponding to the
-process element of the GP (\code{process}).
-
-At some point there may be more information available at
-\url{http://www.biostat.harvard.edu/~paciorek/code/spectralGP}
-
-
 DISCLAIMER:
 
-This is software for statistical research; I do not guarantee the
-correctness of any function or program in this package.
-authors permission.
+ This is software for statistical research and not for commercial
+     uses. The author does not guarantee the correctness of any function
+     or program in this package. Any changes to the software should not
+     be made without the author's permission.
 
+ACKNOWLEDGEMENT:
+     
 Many thanks to Chris Wikle who first suggested I use the Fourier basis
 approximation for Gaussian processes.
 
+REFERENCES:
+
 For more details, see
-Paciorek & Ryan (2005).  Accounting for space in nonparametric logistic
-regression: A Bayesian spectral basis model outperforms other methods. In
-submission.
-\url{http://www.biostat.harvard.edu/~paciorek/papers.html}
+Paciorek, C.J. (2006). Bayesian Smoothing of Irregularly-spaced Data Using
+Fourier Basis Functions. Harvard University Biostatistics Working Paper
+Series. Working Paper 49.
+\url{http://www.bepress.com/harvardbiostat/paper49}
+
+Paciorek, C.J. & Ryan, L.M. (2005).
+Computational techniques for spatial logistic regression with large
+datasets. Harvard University Biostatistics Working Paper 32.
+\url{http://www.bepress.com/harvardbiostat/paper32}
 
 See also,
- Royle, J.A., and C.K. Wikle, (2004).  Efficient Statistical Mapping of
- Avian Count Data.  Ecological and Environmental Statistics , to
- appear.
+ Royle, J.A., and C.K. Wikle, (2005).  Efficient Statistical Mapping of
+ Avian Count Data.  Ecological and Environmental Statistics 12:225-243.
  \url{http://www.stat.missouri.edu/~wikle/pub_new.html}
  
-   Wikle, C.K., (2002).  Spatial modeling of count data: A case study in modelling breeding bird survey data on large spatial domains.
+ Wikle, C.K., (2002).  Spatial modeling of count data: A case study in modelling breeding bird survey data on large spatial domains.
    In Spatial Cluster Modelling, A. Lawson and D. Denison, eds. Chapman
    and Hall, 199-209.
    \url{http://www.stat.missouri.edu/~wikle/pub_new.html}
