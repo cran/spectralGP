@@ -1,4 +1,0 @@
-Christopher J. Paciorek, "Bayesian Smoothing of Irregularly-spaced Data Using Fourier Basis Functions" (August 2006)".  Harvard University Biostatistics Working Paper Series. Working Paper 47.
-http://www.bepress.com/harvardbiostat/paper47
-
-Paciorek, C.J. 2006. Bayesian Smoothing of Irregularly-spaced Data Using Fourier Basis Functions. Harvard University Biostatistics Working Paper Series. Working Paper 47.  http://www.bepress.com/harvardbiostat/paper47

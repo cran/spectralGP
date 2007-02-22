@@ -2,9 +2,6 @@
 function(x,type="l",col=terrain.colors(32),...){
   # plot an image of the process
   # require('fields')  # no longer needed as I added image.plot code to spectralGP
-  if(!is.gp(x)){
-    stop(" 'x' argument must be of class 'gp' ")
-  }
   m1=x$gridsize[1]
   m2=x$gridsize[2]
   if(x$d==2){

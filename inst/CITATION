@@ -1,0 +1,22 @@
+citHeader("To cite package 'spectralGP' in publications use one of the following citations, which describe the package and associated statistical topics.")
+
+citEntry(
+ entry="Article",
+ title= "Bayesian smoothing with {G}aussian processes using {F}ourier basis functions in the spectral{G}{P} library",
+ journal="Journal of Statistical Software",
+ volume= "conditionally accepted",
+ year="2007",
+ author="C. J. Paciorek",
+ textVersion="Paciorek, C.J. (2007) Bayesian smoothing with Gaussian processes using Fourier basis functions in the spectralGP library.  Journal of Statistical Software."
+)
+
+citEntry(
+ entry="techreport",
+ title="Bayesian smoothing of irregularly-spaced data Using Fourier basis functions",
+ journal="Harvard University Biostatistics Working Paper Series",
+ number="49",
+ author="C.J. Paciorek",
+ url="http://www.bepress.com/harvardbiostat/paper49",
+ textVersion="Paciorek, C.J. (2006) Bayesian smoothing of irregularly-spaced data using Fourier basis functions. Harvard University Biostatistics Working Paper Series. Working Paper 49.  http://www.bepress.com/harvardbiostat/paper49."
+)
+

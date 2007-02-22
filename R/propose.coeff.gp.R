@@ -2,9 +2,6 @@
 function(object,block=0,proposal.sd=1,...){
   # proposes coefficients as a normal proposal with the proposal std dev the product of proposal.sd and the prior std dev
   # if block=0, all coefficients are proposed
-  if(!is.gp(object)){
-    stop(" 'object' argument must be of class 'gp' ")
-  }
   m1=object$gridsize[1]
   m2=object$gridsize[2]
   if(block){  # block is specified

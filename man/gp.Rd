@@ -57,7 +57,7 @@ gp(gridsize = c(64, 64), specdens = matern.specdens, specdens.param = c(1, 4),va
     basis functions in expand.grid() format.}
   \item{variances}{A matrix of coefficient variances.}
 }
- \references{For technical details, see Paciorek, C.J. 2006. Bayesian Smoothing of Irregularly-spaced Data Using Fourier Basis Functions. Harvard University Biostatistics Working Paper Series. Working Paper 47.  \url{http://www.bepress.com/harvardbiostat/paper47}}
+\references{Type 'citation("spectralGP")' for references.}
  \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }
 \seealso{ \code{\link{simulate.gp}},\code{\link{plot.gp}},\code{\link{propose.coeff.gp}},\code{\link{calc.variances.gp}},\code{\link{new.mapping}},\code{\link{logdensity.gp}},\code{\link{predict.gp}},\code{\link{add.blocks.gp}}}
 \examples{

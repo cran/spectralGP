@@ -34,7 +34,7 @@ predict.gp(object,newdata=NULL,mapping=NULL,\dots)
   A vector of process values (matrix for two-dimensional processes in
   which prediction on the grid is requested).
 }
-\references{For technical details, see Paciorek, C.J. 2006. Bayesian Smoothing of Irregularly-spaced Data Using Fourier Basis Functions. Harvard University Biostatistics Working Paper Series. Working Paper 49.  \url{http://www.bepress.com/harvardbiostat/paper49}}
+\references{Type 'citation("spectralGP")' for references.}
   \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }
 \seealso{\code{\link{gp}},\code{\link{new.mapping}},\code{\link{plot.gp}}}
 \examples{

@@ -3,9 +3,6 @@ function(object,breaks=NULL,...){
   # adds block structure for sampling coefficients by block in an MCMC framework
   # if breaks is supplied, it should be a vector of the largest allowed frequency for the blocks; largest frequency should be one half the largest of the grid dimensions to ensure that all coefficients are sampled
   # return value is the gp with a new component, a list giving the indices of elements of each block
-  if(!is.gp(object)){
-    stop(" 'object' argument must be of class 'gp' ")
-  }
   object$blocks=list()
   d=object$d
   if(d==1){

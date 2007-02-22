@@ -1,9 +1,6 @@
 "logdensity.gp" <-
 function(object,...){
   # calculate prior log density of the process coefficients
-  if(!is.gp(object)){
-    stop(" 'object' argument must be of class 'gp' ")
-  }
   m1=object$gridsize[1]
   m2=object$gridsize[2]
   # first create a vector of the real and imaginary components of the coefficients

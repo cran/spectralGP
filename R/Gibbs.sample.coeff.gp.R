@@ -1,9 +1,6 @@
 "Gibbs.sample.coeff.gp" <-
 function(object,z,sig2e,meanVal=0,sdVal=1,returnHastings=FALSE,...){
   # takes a Gibbs sample, following the approach of Wikle (2002)
-  if(!is.gp(object)){
-    stop(" 'object' argument must be of class 'gp' ")
-  }
   
   m1=object$gridsize[1]
   m2=object$gridsize[2]

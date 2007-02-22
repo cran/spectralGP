@@ -2,9 +2,6 @@
 function(object,...){
   # given coefficient values, calculates the process values via the inverse FFT
   # this is an internal function is not meant to be called by the user
-  if(!is.gp(object)){
-    stop(" 'object' argument must be of class 'gp' ")
-  }
   object$process=c(Re(fft(object$coeff,inv=TRUE)))/sqrt(prod(object$gridsize))
   # divisor ensures that the process variance is one (it compensates
   # for scaling the coefficient variances by prod(object$gridsize) in

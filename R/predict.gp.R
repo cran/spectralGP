@@ -1,9 +1,6 @@
 "predict.gp" <-
 function(object,newdata=NULL,mapping=NULL,...){
   # return the process values on the grid or at the gridpoints nearest to a set of supplied locations or a supplied mapping from locations to gridpoints 
-  if(!is.gp(object)){
-    stop(" 'object' argument must be of class 'gp' ")
-  }
   if(is.null(newdata) & is.null(mapping)){
     # return process values on grid
     m1=object$gridsize[1]

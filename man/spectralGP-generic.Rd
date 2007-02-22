@@ -1,4 +1,4 @@
-\name{SpectralGP}
+\name{spectralGP-generic}
 \alias{add.blocks}
 \alias{calc.variances}
 \alias{change.param}
@@ -15,10 +15,14 @@
 \alias{updateprocess}
 \alias{zero.coeff}
 \title{
-  SpectralGP internal and generic functions
+  spectralGP generic functions
 }
 \description{
-  These functions are either generics (see help files associated with the
-  spectralGP specific functions) or internal functions that are not intended for user use.
+  These functions are generics; see the help files associated with the
+  spectralGP methods.
 }
-\keyword{internal}
+\alias{propose.coeff}
+\keyword{models }% at least one, from doc/KEYWORDS
+\keyword{smooth}% __ONLY ONE__keyword per line
+\keyword{spatial}% __ONLY ONE__ keyword per line
+

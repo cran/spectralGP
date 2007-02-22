@@ -1,8 +1,5 @@
 "change.param.gp" <-
 function(object,new.specdens.param=NULL,new.variance.param=NULL,...){
-  if(!is.gp(object)){
-    stop(" 'object' argument must be of class 'gp' ")
-  }
   if(!is.null(new.specdens.param) & length(new.specdens.param)!=length(object$specdens.param)){
     stop('New spectral density parameter vector is not of the proper length: ',length(object$specdens.param),'\n')
   }

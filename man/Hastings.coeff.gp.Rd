@@ -27,7 +27,7 @@ Hastings.coeff.gp(object, z, sig2e, meanVal=0, sdVal=1, \dots)
   The function calculates and returns the logdensity.}
 \value{
     The function returns the logdensity.}
-\references{For technical details, see Paciorek, C.J. 2006. Bayesian Smoothing of Irregularly-spaced Data Using Fourier Basis Functions. Harvard University Biostatistics Working Paper Series. Working Paper 49.  \url{http://www.bepress.com/harvardbiostat/paper49}}
+\references{Type 'citation("spectralGP")' for references.}
   \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }
 \seealso{\code{\link{gp}},\code{\link{propose.coeff.gp}},\code{\link{updateprocess.gp}}}
 \keyword{models }% at least one, from doc/KEYWORDS

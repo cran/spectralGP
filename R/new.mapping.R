@@ -3,9 +3,6 @@ function(object,locations){
   # finds the nearest grid point to each location in locations and puts that in a new component, 'mapping'
   # this assumes locations are in (0,1)^d
   # returns vector that maps locations to grid locations
-  if(!is.gp(object)){
-    stop(" 'object' argument must be of class 'gp' ")
-  }
   if(object$d==1){
     if(!
        (is.vector(locations) || (is.array(locations) && length(dim(locations))==1) || (is.matrix(locations) && min(dim(locations))==1)
