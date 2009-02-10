@@ -10,7 +10,7 @@
   by the inverse FFT.
 }
 \usage{
-updateprocess.gp(object,\dots)
+\method{updateprocess}{gp}(object,\dots)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -22,7 +22,7 @@ updateprocess.gp(object,\dots)
 }
 \value{
   The function modifies the GP object, which is essentially a pointer
-   (an R environment in this case), so NULL is returned.}
+   (an R environment in this case), so NULL is returned.
 }
 \references{Type 'citation("spectralGP")' for references.}
   \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }

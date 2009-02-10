@@ -6,14 +6,12 @@
   Adds a line plot to an existing plot.
 }
 \usage{
-lines.gp(x, \dots)
+\method{lines}{gp}(x, \dots)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{A GP object, created by \code{gp}.}
   \item{\dots}{Extra arguments to plotting functions.}
-}
-\details{
 }
 \value{
   No value is returned.

@@ -10,7 +10,7 @@
   once (\code{block=0}) or for individual blocks. 
 }
 \usage{
-propose.coeff.gp(object, block = 0, proposal.sd = 1,\dots)
+\method{propose.coeff}{gp}(object, block = 0, proposal.sd = 1,\dots)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -32,7 +32,7 @@ propose.coeff.gp(object, block = 0, proposal.sd = 1,\dots)
 }
 \value{
    The function modifies the GP object, which is essentially a pointer
-   (an R environment in this case), so NULL is returned.}
+   (an R environment in this case), so NULL is returned.
 }
 \references{Type 'citation("spectralGP")' for references.}
   \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }

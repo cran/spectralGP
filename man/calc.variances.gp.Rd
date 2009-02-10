@@ -6,10 +6,10 @@
   Calculates the prior variances of the spectral coefficients in a GP
   object.  The variances are based on the spectral density function
   chosen in \code{gp} and the 
-  correlation function parameters supplied.}
+  correlation function parameters supplied.
 }
 \usage{
-calc.variances.gp(object,\dots)
+\method{calc.variances}{gp}(object,\dots)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

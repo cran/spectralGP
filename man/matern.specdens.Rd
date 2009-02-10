@@ -6,7 +6,7 @@
   Calculates the Matern spectral density for supplied frequencies and
   Matern correlation parameters. Spectral density is evaluated for each
   supplied frequency or pair of frequencies.  The output is generally
-  used as the prior variances for spectral GP basis coefficients.}
+  used as the prior variances for spectral GP basis coefficients.
 }
 \usage{
 matern.specdens(omega, param, d = 2)

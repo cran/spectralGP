@@ -9,7 +9,8 @@
   process (\code{z}).
 }
 \usage{
-Gibbs.sample.coeff.gp(object, z, sig2e, meanVal=0, sdVal=1,returnHastings=FALSE, \dots)
+\method{Gibbs.sample.coeff}{gp}(object, z, sig2e, meanVal=0,
+sdVal=1,returnHastings=FALSE, \dots)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

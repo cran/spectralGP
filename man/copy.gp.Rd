@@ -8,7 +8,7 @@
   object to another one that is already in existence.
 }
 \usage{
-copy.gp(object, object2 = NULL,\dots)
+\method{copy}{gp}(object, object2 = NULL,\dots)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

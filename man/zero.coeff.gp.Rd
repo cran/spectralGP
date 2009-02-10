@@ -6,7 +6,7 @@
 Sets coefficients to zero in a spectral GP object.  Used to zero out the
 coefficients before simulating a new GP realization from the prior distribution.}
 \usage{
-zero.coeff.gp(object,\dots)
+\method{zero.coeff}{gp}(object,\dots)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -18,7 +18,7 @@ zero.coeff.gp(object,\dots)
 }
 \value{
   The function modifies the GP object, which is essentially a pointer
-   (an R environment in this case), so NULL is returned.}
+   (an R environment in this case), so NULL is returned.
 }
 \references{Type 'citation("spectralGP")' for references.}
   \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }

@@ -7,7 +7,7 @@
   coefficients from their prior distribution and updating the process values.  
 }
 \usage{
-simulate.gp(object,\dots)
+\method{simulate}{gp}(object,\dots)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -19,7 +19,7 @@ simulate.gp(object,\dots)
 }
 \value{
    The function modifies the GP object, which is essentially a pointer
-   (an R environment in this case), so NULL is returned.}
+   (an R environment in this case), so NULL is returned.
 }
 \references{Type 'citation("spectralGP")' for references.}
   \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }

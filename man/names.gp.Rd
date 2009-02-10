@@ -6,14 +6,12 @@
   Gives the names of the elements of the GP object.
 }
 \usage{
-names.gp(x,\dots)
+\method{names}{gp}(x,\dots)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{ Spectral GP object.}
   \item{\dots}{Other arguments.}
-}
-\details{
 }
 \value{ A vector of strings of the names of the elements of the GP object.
 }

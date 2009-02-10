@@ -8,7 +8,7 @@
   the periodicity of the GP emerges are omitted.
 }
 \usage{
-getgrid.gp(object,\dots)
+\method{getgrid}{gp}(object,\dots)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -18,7 +18,7 @@ getgrid.gp(object,\dots)
 \details{ Not meant to be used directly by the user, unless the user
   needs the unique gridpoints in each dimension. For the expanded grid
   that corresponds to the process values, with each row containing the
-  two coordinates of a grid location, use \code{expand.gpgrid}.}
+  two coordinates of a grid location, use \code{expand.gpgrid}.
 }
 \value{
   For two dimensions, a list containing the gridpoints in each

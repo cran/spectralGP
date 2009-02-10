@@ -11,8 +11,6 @@ is.gp(object)
 \arguments{
   \item{object}{A GP object, created by \code{gp}. }
 }
-\details{
-}
 \value{
   Returns 'TRUE' if the argument is a gp, and 'FALSE' otherwise.}
 \references{Type 'citation("spectralGP")' for references.}

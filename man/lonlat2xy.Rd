@@ -12,7 +12,7 @@ lonlat2xy(lnlt,miles=FALSE)
 \arguments{
   \item{lnlt}{A two-column matrix-like object of lon/lat coordinates to
     be projected, with longitude in the first column.}
-  \item{miles} {Indicator of whether distances should be calculated in
+  \item{miles}{Indicator of whether distances should be calculated in
     miles or kilometers (FALSE, the default).}
 }
 \details{

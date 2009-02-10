@@ -8,7 +8,7 @@
   GP object.
 }
 \usage{
-plot.gp(x, type = "l", col = terrain.colors(32), \dots)
+\method{plot}{gp}(x, type = "l", col = terrain.colors(32), \dots)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -20,8 +20,6 @@ plot.gp(x, type = "l", col = terrain.colors(32), \dots)
     image.plot; I prefer terrain.colors(64) as topo.colors has sharp
     color changes between adjacent bins.}
   \item{\dots}{Extra arguments to plotting functions.}
-}
-\details{
 }
 \value{
   No value is returned.

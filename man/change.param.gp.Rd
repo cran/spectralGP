@@ -5,10 +5,10 @@
 \description{
   Changes the correlation parameter values or the (optional) variance
   parameter and  recalculates the prior
-  variances of the coefficients using \code{calc.variances.gp}.}
+  variances of the coefficients using \code{calc.variances.gp}.
 }
 \usage{
-change.param.gp(object,new.specdens.param=NULL,new.variance.param=NULL,\dots)
+\method{change.param}{gp}(object,new.specdens.param=NULL,new.variance.param=NULL,\dots)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

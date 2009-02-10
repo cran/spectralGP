@@ -8,7 +8,7 @@
   part of the domain in which the periodicity of the GP emerges are omitted.
 }
 \usage{
-expand.gpgrid.gp(object,\dots)
+\method{expand.gpgrid}{gp}(object,\dots)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -17,7 +17,7 @@ expand.gpgrid.gp(object,\dots)
 }
 \details{
   Note that this function is not named \code{expand.grid.gp} because
-  \code{expand.grid} is a function, and not an S3 method.}
+  \code{expand.grid} is a function, and not an S3 method.
 }
 \value{
   A matrix of grid locations with the first column the

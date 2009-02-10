@@ -17,8 +17,7 @@ new.mapping(object, locations)
     coordinate and the second column the second coordinate.  Locations
     should lie in \eqn{(0,1)^d}, as the process representation is on a grid on \eqn{(0,1)^d}.}
 }
-\details{
-}
+
 \value{
   A vector for which each element is the index of the gridpoint nearest
   the location.  The indices run from 1 to \eqn{(k/2)^d} where k the number of
@@ -32,7 +31,7 @@ new.mapping(object, locations)
 }
 \references{Type 'citation("spectralGP")' for references.}
 \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }
-\seealso{\code{\link{gp}},\code{predict.gp}}
+\seealso{\code{\link{gp}},\code{\link{predict.gp}}}
 \examples{
 ##---- Should be DIRECTLY executable !! ----
 ##-- ==>  Define data, use random,

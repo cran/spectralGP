@@ -8,7 +8,7 @@
  and a prior of independent Gaussians.
 }
 \usage{
-logdensity.gp(object,\dots)
+\method{logdensity}{gp}(object,\dots)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

@@ -9,9 +9,8 @@
   at once.  The size of the blocks will usually increase with increasing
  frequency as the most important coefficients are those for the low
  frequency basis functions.}
-}
 \usage{
-add.blocks.gp(object, breaks = NULL,\dots)
+\method{add.blocks}{gp}(object, breaks = NULL,\dots)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -36,7 +35,7 @@ add.blocks.gp(object, breaks = NULL,\dots)
 }
 \value{
    The function modifies the GP object, which is essentially a pointer
-   (an R environment in this case), so NULL is returned.}
+   (an R environment in this case), so NULL is returned.
 }
 \references{Type 'citation("spectralGP")' for references.}
 \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }

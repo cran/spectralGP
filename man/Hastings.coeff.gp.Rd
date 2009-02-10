@@ -5,10 +5,10 @@
 \description{
   Calculates Hastings value of coefficients, the logdensity of the current
   coefficients given proposal mean and variance based on a Gibbs sample
-  of the form in \code{Gibbs.sample.coeff.gp}.}
+  of the form in \code{Gibbs.sample.coeff.gp}.
 }
 \usage{
-Hastings.coeff.gp(object, z, sig2e, meanVal=0, sdVal=1, \dots)
+\method{Hastings.coeff}{gp}(object, z, sig2e, meanVal=0, sdVal=1, \dots)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

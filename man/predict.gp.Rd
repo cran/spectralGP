@@ -7,7 +7,7 @@
   grid or predicts process values for a new set of inputs (domain points).
 }
 \usage{
-predict.gp(object,newdata=NULL,mapping=NULL,\dots)
+\method{predict}{gp}(object,newdata=NULL,mapping=NULL,\dots)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
