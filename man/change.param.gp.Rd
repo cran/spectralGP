@@ -8,7 +8,8 @@
   variances of the coefficients using \code{calc.variances.gp}.
 }
 \usage{
-\method{change.param}{gp}(object,new.specdens.param=NULL,new.variance.param=NULL,\dots)
+\method{change.param}{gp}(object,new.specdens.param=NULL,
+  new.variance.param=NULL,\dots)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -29,11 +30,8 @@
    (an R environment in this case), so NULL is returned.}
 \references{Type 'citation("spectralGP")' for references.}
   \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }
-\seealso{\code{\link{gp}},\code{\link{calc.variances.gp}},\code{\link{logdensity.gp}}}
+\seealso{\code{\link{gp}}, \code{\link{calc.variances.gp}}, \code{\link{logdensity.gp}}}
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
 library(spectralGP)
 rho=1
 gp1=gp(128,matern.specdens,c(rho,4))

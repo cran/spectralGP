@@ -39,11 +39,6 @@ For more details, type 'citation("spectralGP")' for references.
 
 See also:
 
-Paciorek, C.J. & Ryan, L.M. (2005).
-Computational techniques for spatial logistic regression with large
-datasets. Harvard University Biostatistics Working Paper 32.
-\url{http://www.bepress.com/harvardbiostat/paper32}
-
  Royle, J.A., and C.K. Wikle, (2005).  Efficient Statistical Mapping of
  Avian Count Data.  Ecological and Environmental Statistics 12:225-243.
  \url{http://www.stat.missouri.edu/~wikle/pub_new.html}

@@ -12,7 +12,8 @@
   GPs are supported.
 }
 \usage{
-gp(gridsize = c(64, 64), specdens = matern.specdens, specdens.param = c(1, 4),variance.param=1,const.fixed=FALSE)
+gp(gridsize = c(64, 64), specdens = matern.specdens, 
+  specdens.param = c(1, 4),variance.param=1,const.fixed=FALSE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -59,7 +60,8 @@ gp(gridsize = c(64, 64), specdens = matern.specdens, specdens.param = c(1, 4),va
 }
 \references{Type 'citation("spectralGP")' for references.}
  \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }
-\seealso{ \code{\link{simulate.gp}},\code{\link{plot.gp}},\code{\link{propose.coeff.gp}},\code{\link{calc.variances.gp}},\code{\link{new.mapping}},\code{\link{logdensity.gp}},\code{\link{predict.gp}},\code{\link{add.blocks.gp}}}
+\seealso{ \code{\link{simulate.gp}}, \code{\link{plot.gp}}, \code{\link{propose.coeff.gp}}, \code{\link{calc.variances.gp}},
+\code{\link{new.mapping}}, \code{\link{logdensity.gp}}, \code{\link{predict.gp}}, \code{\link{add.blocks.gp}}}
 \examples{
 library(spectralGP)
 gp1=gp(128,matern.specdens,c(1,4))

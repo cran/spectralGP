@@ -26,11 +26,8 @@
  }
 \references{Type 'citation("spectralGP")' for references.}
   \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }
-\seealso{\code{\link{gp}},\code{\link{getgrid.gp}},\code{\link{predict.gp}}}
+\seealso{\code{\link{gp}}, \code{\link{getgrid.gp}}, \code{\link{predict.gp}}}
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
 library(spectralGP)
 gp1=gp(128,matern.specdens,c(1,4))
 gp2=gp(c(64,64),matern.specdens,c(1,4))

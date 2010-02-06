@@ -31,12 +31,8 @@ new.mapping(object, locations)
 }
 \references{Type 'citation("spectralGP")' for references.}
 \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }
-\seealso{\code{\link{gp}},\code{\link{predict.gp}}}
+\seealso{\code{\link{gp}}, \code{\link{predict.gp}}}
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
 library(spectralGP)
 loc1=runif(100)
 loc2=cbind(runif(100),runif(100,0,1))

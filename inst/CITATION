@@ -4,18 +4,20 @@ citEntry(
  entry="Article",
  title= "Bayesian smoothing with {G}aussian processes using {F}ourier basis functions in the spectral{G}{P} library",
  journal="Journal of Statistical Software",
- volume= "conditionally accepted",
+ volume= "19",
+ number="2",
  year="2007",
  author="C. J. Paciorek",
- textVersion="Paciorek, C.J. (2007) Bayesian smoothing with Gaussian processes using Fourier basis functions in the spectralGP library.  Journal of Statistical Software."
+ textVersion="Paciorek, C.J. (2007) Bayesian smoothing with Gaussian processes using Fourier basis functions in the spectralGP library.  Journal of Statistical Software 19(2).  PMCID: PMC2156645."
 )
 
 citEntry(
  entry="techreport",
- title="Bayesian smoothing of irregularly-spaced data Using Fourier basis functions",
- journal="Harvard University Biostatistics Working Paper Series",
+ title="Bayesian smoothing of irregularly-spaced data using {F}ourier basis functions",
+ institution="Harvard University Biostatistics",
  number="49",
  author="C.J. Paciorek",
+ year="2006",
  url="http://www.bepress.com/harvardbiostat/paper49",
  textVersion="Paciorek, C.J. (2006) Bayesian smoothing of irregularly-spaced data using Fourier basis functions. Harvard University Biostatistics Working Paper Series. Working Paper 49.  http://www.bepress.com/harvardbiostat/paper49."
 )

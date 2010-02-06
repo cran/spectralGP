@@ -30,12 +30,7 @@
    (an R environment in this case), so NULL is returned.}
 \references{Type 'citation("spectralGP")' for references.}
   \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }
-\seealso{\code{\link{gp}},\code{\link{propose.coeff.gp}},\code{\link{simulate.gp}},\code{\link{logdensity.gp}},\code{\link{change.param.gp}}}
-\examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-}
+\seealso{\code{\link{gp}}, \code{\link{propose.coeff.gp}}, \code{\link{simulate.gp}}, \code{\link{logdensity.gp}}, \code{\link{change.param.gp}}}
 \keyword{models }% at least one, from doc/KEYWORDS
 \keyword{smooth}% __ONLY ONE__keyword per line
 \keyword{spatial}% __ONLY ONE__ keyword per line

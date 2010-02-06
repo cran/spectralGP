@@ -35,7 +35,7 @@ sdVal=1,returnHastings=FALSE, \dots)
    (an R environment in this case), so NULL is returned, unless \code{returnHastings=TRUE}.}
 \references{Type 'citation("spectralGP")' for references.}
   \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }
-\seealso{\code{\link{gp}},\code{\link{propose.coeff.gp}},\code{\link{updateprocess.gp}}}
+\seealso{\code{\link{gp}}, \code{\link{propose.coeff.gp}}, \code{\link{updateprocess.gp}}}
 \keyword{models }% at least one, from doc/KEYWORDS
 \keyword{smooth}% __ONLY ONE__keyword per line
 \keyword{spatial}% __ONLY ONE__ keyword per line

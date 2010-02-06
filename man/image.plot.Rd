@@ -111,8 +111,8 @@ have room for the legend with any adjustments stuck to the right side.
 image
 }
 \examples{
- x<- 1:10 
- y<- 1:15 
+x<- 1:10 
+y<- 1:15 
 z<- outer( x,y,"+") 
 image.plot(x,y,z) 
 # now add some points on diagonal  
@@ -125,8 +125,6 @@ image.plot( x,y,z,legend.width=.05, legend.shrink=.5, horizontal=TRUE)
 par( mar=c(10,5,5,5))
 
 image( x,y,z)
-image.plot( zlim=c(0,25), legend.only=TRUE, horizontal=TRUE)
-#
- 
+image.plot( zlim=c(0,25), legend.only=TRUE, horizontal=TRUE) 
 }
 \keyword{hplot}

@@ -9,7 +9,7 @@
 }
 \references{Type 'citation("spectralGP")' for references.}
   \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }
-\seealso{\code{\link{gp}},\code{\link{names.gp}}}
+\seealso{\code{\link{gp}}, \code{\link{names.gp}}}
 
 \keyword{models }% at least one, from doc/KEYWORDS
 \keyword{smooth}% __ONLY ONE__keyword per line

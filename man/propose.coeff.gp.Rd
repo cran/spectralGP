@@ -36,11 +36,9 @@
 }
 \references{Type 'citation("spectralGP")' for references.}
   \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }
-\seealso{\code{\link{gp}},\code{\link{calc.variances.gp}},\code{\link{simulate.gp}},\code{\link{updateprocess.gp}},\code{\link{zero.coeff.gp}}}
+\seealso{\code{\link{gp}}, \code{\link{calc.variances.gp}}, \code{\link{simulate.gp}}, \code{\link{updateprocess.gp}},
+  \code{\link{zero.coeff.gp}}}
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
 library(spectralGP)
 rho=1
 gp1=gp(128,matern.specdens,c(rho,4))

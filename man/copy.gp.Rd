@@ -27,7 +27,7 @@
 }
 \references{Type 'citation("spectralGP")' for references.}
   \author{Christopher Paciorek \email{paciorek@alumni.cmu.edu} }
-\seealso{ \code{\link{gp}},\code{\link{is.gp}}}
+\seealso{ \code{\link{gp}}, \code{\link{is.gp}}}
 \examples{
 library(spectralGP)
 gp1=gp(128,matern.specdens,c(1,4))
