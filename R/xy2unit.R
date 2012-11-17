@@ -19,8 +19,8 @@ function(locations,locations.scale=NULL){
     stop("Dimension of locations and locations.scale must be the same")
   }
   if(d==1){
-    locations.scale=matrix(locations.scale,nc=1)
-    locations=matrix(locations,nc=1)
+    locations.scale=matrix(locations.scale,ncol=1)
+    locations=matrix(locations,ncol=1)
   }
   maxs=apply(locations.scale,2,max)
   mins=apply(locations.scale,2,min)

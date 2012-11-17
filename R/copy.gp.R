@@ -8,7 +8,7 @@ function(object,object2=NULL,...){
   }
   elements=names(object)
   for(index in 1:length(elements)){
-    assign(elements[index],get(elements[index],env=object,inherits=FALSE),env=object2)
+    assign(elements[index],get(elements[index],envir=object,inherits=FALSE),envir=object2)
   }
   if(nullFlag){
     return(object2)

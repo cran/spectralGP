@@ -27,7 +27,7 @@ function(gridsize=c(64,64),specdens="matern.specdens",specdens.param=c(1,4),vari
     object$gridsize=c(object$gridsize,1)
   }
   gridsize=object$gridsize
-  object$coeff=matrix(0,nr=gridsize[1],nc=gridsize[2])
+  object$coeff=matrix(0,nrow=gridsize[1],ncol=gridsize[2])
   if(d>2){
     stop("Only one- and two-dimensional processes are enabled;\nplease specify gridsize as a scalar or vector of length two")
   }
@@ -42,7 +42,7 @@ function(gridsize=c(64,64),specdens="matern.specdens",specdens.param=c(1,4),vari
     omega2=c(omega2,-(rev(omega2))[2:(length(omega2)-1)])
     object$omega=expand.grid(omega1=omega1,omega2=omega2)
   } else{
-    object$omega=matrix(omega1,nc=1)
+    object$omega=matrix(omega1,ncol=1)
   }
   class(object)="gp"
   calc.variances(object) # calculates prior variances based on correlation function and its parameters

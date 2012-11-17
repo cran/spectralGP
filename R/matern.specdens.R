@@ -8,11 +8,11 @@ function(omega,param,d=2){
     if(d==2 && length(omega)!=2){
       warning("You specified d=2 but gave a vector of frequencies; interpreting as d=1.\n")
       d=1
-      omega=matrix(c(omega),nc=1)
+      omega=matrix(c(omega),ncol=1)
     }
     if(d==2 && length(omega)==2){
       warning("Assuming a single two-dimensional frequency.\n")
-      omega=matrix(omega,nr=1,nc=d)
+      omega=matrix(omega,nrow=1,ncol=d)
     }
   } else{
     if(!(

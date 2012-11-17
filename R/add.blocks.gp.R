@@ -6,7 +6,7 @@ function(object,breaks=NULL,...){
   object$blocks=list()
   d=object$d
   if(d==1){
-    indices=matrix(1:object$gridsize[1],nc=1)
+    indices=matrix(1:object$gridsize[1],ncol=1)
     maxvals=abs(object$omega)
   } else{ # d=2
     indices=as.matrix(expand.grid(1:object$gridsize[1],1:object$gridsize[2]))
@@ -25,12 +25,12 @@ function(object,breaks=NULL,...){
   } else{
     object$blocks[[1]]=indices[maxvals<=breaks[1] & object$omega[,2]>=0,]
     if(!is.matrix(object$blocks[[1]])){
-      object$blocks[[1]]=matrix(object$blocks[[1]],nc=2)
+      object$blocks[[1]]=matrix(object$blocks[[1]],ncol=2)
     }
     for(b in 2:object$num.blocks){
       object$blocks[[b]]=indices[maxvals<=breaks[b] & maxvals>breaks[b-1] & object$omega[,2]>=0,]
       if(!is.matrix(object$blocks[[b]])){
-        object$blocks[[b]]=matrix(object$blocks[[b]],nc=2)
+        object$blocks[[b]]=matrix(object$blocks[[b]],ncol=2)
       }
     }
     object$blockSizes=NULL
