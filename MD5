@@ -1,4 +1,4 @@
-6a6eef9d25ac9a8bd104c529574edffa *DESCRIPTION
+7aa111c0021d25a45e9879520cf269e0 *DESCRIPTION
 29bd9682933eefef3384efefc96694ba *NAMESPACE
 f1e89fec7b79d75e554a29bf7eb4944d *R/Gibbs.sample.coeff.R
 f368070dfe1451db863ebe397ae3490c *R/Gibbs.sample.coeff.gp.R
@@ -28,7 +28,7 @@ b05e0aebc42fa290d9ec1de45c7aa9c9 *R/lonlat2xy.R
 02c1765411b9bca9eb69861e13816b70 *R/matern.specdens.R
 6c4ce2750f7fe15a2968b43769909738 *R/names.gp.R
 f0a49c656772ace2b68f9df77ec1b662 *R/new.mapping.R
-98efdd0833f9115d4c496dca54a5a48a *R/onLoad.R
+f25648c01a652df0974d78ff478735c8 *R/onLoad.R
 5ac9c1751f45a8000569bfd6a1261338 *R/plot.gp.R
 c9fc09121b2acc2b277051603fc66762 *R/points.gp.R
 c3dfad6b7c731ca5519838c1226d7f8a *R/predict.gp.R
@@ -53,7 +53,7 @@ c26b6611c463d2b111d8d911da83d8d2 *man/Gibbs.sample.coeff.gp.Rd
 729ad2440947c14c1306c6e5b5894a91 *man/expand.gpgrid.gp.Rd
 583c45723a3a067b1fe1fb96d1da7de9 *man/getgrid.gp.Rd
 326769151178f10c442b635611404e22 *man/gp.Rd
-fd306b8cc22f0c00caf78347f462c726 *man/image.plot.Rd
+f5e3567c966041dd069d8ebcb654ff70 *man/image.plot.Rd
 0db36412c7b294649916772ed309ed7d *man/is.gp.Rd
 f0884c5bd65a1eff07769621f64bfb5b *man/lines.gp.Rd
 ba2c6a062fbf20b8b4a4923a40f072bd *man/logdensity.gp.Rd
@@ -73,6 +73,3 @@ b57b74002441afdc6462f92f4fd6c051 *man/spectralGP.Rd
 7fe52e61ce310ea783da1f6dac52233c *man/updateprocess.gp.Rd
 2da6260ba0d685acba33599f89a609f2 *man/xy2unit.Rd
 4d26ee32797bee6d8e840611d2bc422f *man/zero.coeff.gp.Rd
-a0591c04444d9409b62f53220d7dbc71 *oldNAMESPACE
-8fe0e0f88176c301f820b6df2a1af4ab *oldS3NAMESPACE
-3cec14821d93b59df80440813571f8ea *zzz.R

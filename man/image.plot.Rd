@@ -4,22 +4,22 @@
   Draws image plot with a legend strip for the color scale.  
 }
 \description{
-This function combines the SPLUS image function with some automatic 
+This function combines the R \code{image} function with some automatic 
 placement of a legend. This is done by splitting the plotting region  
 into two parts. Putting the image in one and the legend in the
 other.
 
-This function and help file are copied from the fields library.   
+This function and help file are copied from the fields package.   
 }
 \usage{
-image.plot(\dots, add = FALSE, nlevel = 64, legend.shrink = 0.9, 
+\method{image}{plot}(\dots, add = FALSE, nlevel = 64, legend.shrink = 0.9, 
     legend.width = 0.05, graphics.reset = FALSE, horizontal = FALSE, 
     offset = 2 * legend.width, bigplot = NULL, smallplot = NULL, 
     legend.only = FALSE, col = topo.colors(nlevel)) 
 }
 \arguments{
 \item{\dots}{
-The usual arguments to the image function. 
+The usual arguments to the \code{image} function. 
 because this function may change the size of the plotting 
 region. (See details below)  
 }
@@ -100,7 +100,7 @@ plotting regions in fitting both of these plot and one may have to change
 the default character sizes or margins to make things fit.  
 
  By keeping the zlim argument the same across images one can generate
-the same color scale. (See image help file)  One useful technique for a
+the same color scale. (See \code{image} help file)  One useful technique for a
 panel of images is to just draw the first with image.plot to get a legend
 and just use image for subsequent plots. Also keep in mind one can just
 add a legend to an existing plot without changing plotting parameters.
@@ -108,7 +108,7 @@ Usually a square plot (pty="s") done in a rectangular plot region will
 have room for the legend with any adjustments stuck to the right side.
 }
 \seealso{
-image
+\code{image}
 }
 \examples{
 x<- 1:10 
