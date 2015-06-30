@@ -1,4 +1,4 @@
- image.plot.plt <-
+ image_plot_plt <-
 function (...,add = FALSE, legend.shrink = 0.9, legend.width = 0.04, 
     horizontal = FALSE, offset = 2 * legend.width, bigplot = NULL, 
     smallplot = NULL) 

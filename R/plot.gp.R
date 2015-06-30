@@ -8,9 +8,9 @@ function(x,type="l",col=terrain.colors(32),...){
     gr=getgrid(x) 
     pred=predict(x)
     if(min(pred)==max(pred)){      
-      image.plot(gr$x1,gr$x2,pred,xlab=expression(x[1]),ylab=expression(x[2]),col=col,zlim=c(min(pred)-1,max(pred)+1),...)
+      image_plot(gr$x1,gr$x2,pred,xlab=expression(x[1]),ylab=expression(x[2]),col=col,zlim=c(min(pred)-1,max(pred)+1),...)
     } else{
-      image.plot(gr$x1,gr$x2,pred,xlab=expression(x[1]),ylab=expression(x[2]),col=col,...)
+      image_plot(gr$x1,gr$x2,pred,xlab=expression(x[1]),ylab=expression(x[2]),col=col,...)
     }
   } else{
     plot(getgrid(x),predict(x),xlab="x",ylab="f",type,...)

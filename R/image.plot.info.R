@@ -1,4 +1,4 @@
-"image.plot.info" <-
+"image_plot_info" <-
 function (...) 
 {
     temp <- list(...)

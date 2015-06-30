@@ -12,7 +12,7 @@ function(object,z,sig2e,meanVal=0,sdVal=1,returnHastings=FALSE,...){
     sig2e.precMatrix[(m1/2+1),(m2/2+1)]=(1/2)*sig2e.precMatrix[(m1/2+1),(m2/2+1)]
     sig2e.precMatrix[1,(m2/2+1)]=(1/2)*sig2e.precMatrix[1,(m2/2+1)]
   }
-  coeff.var=1/(1/(object$variance.param*object$variances)+sig2e.precMatrix)
+  coeff.var=1/(1/object$variances+sig2e.precMatrix)
   coeff.mean=coeff.var*sig2e.precMatrix*fft(matrix((z-meanVal)/sdVal,nrow=m1,ncol=m2,byrow=FALSE), inverse = FALSE)/(sqrt(m1*m2)) # division by sqrt(m1*m2) ensures proper scaling
   object$coeff=matrix(rnorm(m1*m2,Re(coeff.mean),sqrt(c(coeff.var))),nrow=m1,ncol=m2)+(0+1i)*matrix(rnorm(m1*m2,Im(coeff.mean),sqrt(c(coeff.var))),nrow=m1,ncol=m2)
   if(object$const.fixed){

@@ -17,7 +17,7 @@
     "p" for points, etc.}
   \item{col}{Color scheme for image plot if process is
     two-dimensional. E.g., topo.colors(64) is the default for
-    image.plot; I prefer terrain.colors(64) as topo.colors has sharp
+    image_plot; I prefer terrain.colors(64) as topo.colors has sharp
     color changes between adjacent bins.}
   \item{\dots}{Extra arguments to plotting functions.}
 }

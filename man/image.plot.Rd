@@ -1,5 +1,5 @@
-\name{image.plot}
-\alias{image.plot}
+\name{image_plot}
+\alias{image_plot}
 \title{
   Draws image plot with a legend strip for the color scale.  
 }
@@ -12,7 +12,7 @@ other.
 This function and help file are copied from the fields package.   
 }
 \usage{
-\method{image}{plot}(\dots, add = FALSE, nlevel = 64, legend.shrink = 0.9, 
+image_plot(\dots, add = FALSE, nlevel = 64, legend.shrink = 0.9, 
     legend.width = 0.05, graphics.reset = FALSE, horizontal = FALSE, 
     offset = 2 * legend.width, bigplot = NULL, smallplot = NULL, 
     legend.only = FALSE, col = topo.colors(nlevel)) 
@@ -114,17 +114,17 @@ have room for the legend with any adjustments stuck to the right side.
 x<- 1:10 
 y<- 1:15 
 z<- outer( x,y,"+") 
-image.plot(x,y,z) 
+image_plot(x,y,z) 
 # now add some points on diagonal  
 points( 5:10, 5:10)
 #
 #fat (5\% of figure) and short (50\% of figure)  legend strip on the bottom 
-image.plot( x,y,z,legend.width=.05, legend.shrink=.5, horizontal=TRUE) 
+image_plot( x,y,z,legend.width=.05, legend.shrink=.5, horizontal=TRUE) 
 
 # add a legend on the bottom but first change margin for some room 
 par( mar=c(10,5,5,5))
 
 image( x,y,z)
-image.plot( zlim=c(0,25), legend.only=TRUE, horizontal=TRUE) 
+image_plot( zlim=c(0,25), legend.only=TRUE, horizontal=TRUE) 
 }
 \keyword{hplot}

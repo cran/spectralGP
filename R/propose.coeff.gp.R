@@ -17,17 +17,17 @@ function(object,block=0,proposal.sd=1,...){
     } else{
       n.elements=length(elements)
     }
-    proposal.sd=proposal.sd*sqrt(object$variance.param*object$variances[elements])  # proposal std devs
+    proposal.sd=proposal.sd*sqrt(object$variances[elements])  # proposal std devs
     object$coeff[elements]=object$coeff[elements]+rnorm(n.elements,0,proposal.sd)+1i*rnorm(n.elements,0,proposal.sd)  # propose the coefficients
   } else{  # all coefficients are proposed
-    proposal.sd=proposal.sd*sqrt(object$variance.param*object$variances)
+    proposal.sd=proposal.sd*sqrt(object$variances)
     object$coeff=object$coeff+rnorm(m1*m2,0,proposal.sd)+1i*rnorm(m1*m2,0,proposal.sd)
   }
   # deterministically calculates some coefficients so processes are real-valued
   if(object$const.fixed){
     object$coeff[1,1]=0
   } else{
-    Re(object$coeff[1,1])
+    object$coeff[1,1]=Re(object$coeff[1,1])
   }
   object$coeff[(m1/2+1),1]=Re(object$coeff[(m1/2+1),1])
   object$coeff[m1:(m1/2+2),1]=Conj(object$coeff[2:(m1/2),1])

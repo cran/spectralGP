@@ -10,7 +10,7 @@ function(object,z,sig2e,meanVal=0,sdVal=1,...){
     sig2e.precMatrix[(m1/2+1),(m2/2+1)]=0.5*sig2e.precMatrix[(m1/2+1),(m2/2+1)]
     sig2e.precMatrix[1,(m2/2+1)]=0.5*sig2e.precMatrix[1,(m2/2+1)]
   }
-  coeff.var=1/(1/(object$variance.param*object$variances)+sig2e.precMatrix)
+  coeff.var=1/(1/object$variances+sig2e.precMatrix)
   coeff.mean=coeff.var*sig2e.precMatrix*fft(matrix((z-meanVal)/sdVal,nrow=m1,ncol=m2,byrow=FALSE), inverse = FALSE)/(sqrt(m1*m2))  # division by sqrt(m1*m2) ensures proper scaling
 
   screenr=matrix(1,nrow=m1,ncol=m2)

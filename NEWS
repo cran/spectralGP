@@ -1,0 +1,14 @@
+Version 1.3.3 (6/30/15):
+
+* fixed bug in propose.coeff.gp in line 30, which is now:
+  object$coeff[1,1]=Re(object$coeff[1,1])
+
+* fixed bugs in propose.coeff.gp, Gibbs.sample.coeff.R, and Hastings.coeff.gp.R
+  in which I was using object$variance.param*object$variances even though 
+  object$variance.param was already included in the calculation of 
+  object$variances.
+
+Thanks to William Leeds for pointing these out.
+
+* changed the image.plot and related functions copied from fields to be 
+  named with _ to avoid R thinking these are S3 methods 

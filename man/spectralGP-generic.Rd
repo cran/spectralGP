@@ -7,8 +7,8 @@
 \alias{getgrid}
 \alias{Gibbs.sample.coeff}
 \alias{Hastings.coeff}
-\alias{image.plot.info}
-\alias{image.plot.plt}
+\alias{image_plot_info}
+\alias{image_plot_plt}
 \alias{logdensity}
 \alias{propose.coeff}
 \alias{simulate}

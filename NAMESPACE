@@ -1,7 +1,8 @@
-export(add.blocks,calc.variances,change.param,copy,expand.gpgrid,getgrid,Gibbs.sample.coeff,gp,Hastings.coeff,image.plot.info,image.plot.plt,image.plot,is.gp,logdensity,lonlat2xy,matern.specdens,new.mapping,propose.coeff,rdist.earth,simulate,updateprocess,xy2unit,zero.coeff)
+export(add.blocks,calc.variances,change.param,copy,expand.gpgrid,getgrid,Gibbs.sample.coeff,gp,Hastings.coeff,image_plot_info,image_plot_plt,image_plot,is.gp,logdensity,lonlat2xy,matern.specdens,new.mapping,propose.coeff,rdist.earth,simulate,updateprocess,xy2unit,zero.coeff)
 
-importFrom(graphics,plot,lines,points)
-importFrom(stats,predict)
+importFrom(graphics,plot,lines,points,par,image,axis,box)
+importFrom(stats,predict,rnorm,fft,dnorm)
+importFrom(grDevices,topo.colors,terrain.colors)
 
 S3method(add.blocks,gp)
 S3method(copy,gp)
@@ -22,3 +23,4 @@ S3method(logdensity,gp)
 S3method(getgrid,gp)
 S3method(Gibbs.sample.coeff,gp)
 S3method(Hastings.coeff,gp)
+

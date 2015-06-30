@@ -1,16 +1,16 @@
-"image.plot" <- function (..., add = FALSE, nlevel = 64, legend.shrink = 0.9, 
+"image_plot" <- function (..., add = FALSE, nlevel = 64, legend.shrink = 0.9, 
     legend.width = 0.05, graphics.reset = FALSE, horizontal = FALSE, 
     offset = 2 * legend.width, bigplot = NULL, smallplot = NULL, 
     legend.only = FALSE, col = topo.colors(nlevel)) {
 
   # this is modified slightly from the fields function image.plot() and uses the fields auxiliary functions image.plot.info() and image.plot.plt()
     old.par <- par(no.readonly = TRUE)
-    info <- image.plot.info(...)
+    info <- image_plot_info(...)
     if (add) 
         big.plot <- old.par$plt
     if (legend.only) 
         graphics.reset <- TRUE
-    temp <- image.plot.plt(add = add, legend.shrink = legend.shrink, 
+    temp <- image_plot_plt(add = add, legend.shrink = legend.shrink, 
         legend.width = legend.width, horizontal = horizontal, 
         offset = offset, bigplot = bigplot, smallplot = smallplot)
     smallplot <- temp$smallplot
